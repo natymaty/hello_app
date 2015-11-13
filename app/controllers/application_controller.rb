@@ -8,4 +8,10 @@ class ApplicationController < ActionController::Base
 	  	value.force_encoding('UTF-8').html_safe
 	  render text: "hello,pierożki!"
 	end
+	
+	def goodbye
+		value = "pierożki"
+		value.force_enconding('UTF-8').html_safe
+		render text: "goodbye,pierożki"
+	end
 end
