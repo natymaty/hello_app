@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 	
 	def goodbye
 		value = "pierożki"
-		value.force_enconding('UTF-8').html_safe
+		value.force_encoding('UTF-8').html_safe
 		render text: "goodbye,pierożki"
 	end
 end
